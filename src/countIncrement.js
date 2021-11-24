@@ -13,7 +13,7 @@ class TextCounter extends React.Component {
             3 add calling in event after errow funtion with () but when the function is simple and not incloded inner funtion
         */
     }
-    inc = (e) => {
+    inc(e) {
         this.setState(() => ({
             text: e.target.value
         }));
@@ -23,7 +23,7 @@ class TextCounter extends React.Component {
             <div>
                 <h1>Hello there is Bilal Ahmed</h1>,
                 <h2>Texting</h2>,
-                <textarea value={this.state.text} onChange={this.inc} />
+                <textarea value={this.state.text} onChange={this.inc.bind(this)} />
                 {/* <textarea value={this.state.text} onChange={this.inc} /> Hello*/}
                 <h2>{this.state.text}</h2>
             </div>
