@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TextCounter from './countIncrement';
+import Greet from './greet';
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -29,7 +30,8 @@ ReactDOM.render(
   <div>
 
     <Clock />,
-    <TextCounter />
+    <TextCounter />,
+    <Greet isLogged={false} />
   </div>,
   document.getElementById('root')
 )
