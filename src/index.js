@@ -1,27 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import FancyTable from './fancyTable'
-
-class Con extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
-  render() {
-    return (
-      <div>
-        {this}
-      </div>
-    );
-  }
-}
-
+import App from './App'
 
 
 
 ReactDOM.render(
-  <div>
-    <Con />
-  </div>,
+  <App />,
   document.getElementById('root')
 )
