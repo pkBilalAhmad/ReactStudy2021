@@ -1,40 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import TextCounter from './countIncrement';
-// import Greet from './greet';
-import Calculator from './Tempr';
+// import FancyTable from './fancyTable'
 
-
-class Clock extends React.Component {
+class Con extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { time: new Date() }
-  }
-  componentDidMount() {
-    this.tim = setInterval(() => this.tick(), 1000)
-  }
-  tick() {
-    this.setState({
-      time: new Date()
-    });
+    this.state = {}
   }
   render() {
     return (
       <div>
-        <h1>This is time in syncronous point</h1>
-        <h2>Now the time is </h2>
-        <h3>{this.state.time.toLocaleTimeString()}</h3>
+        {this}
       </div>
     );
   }
 }
 
+
+
+
 ReactDOM.render(
   <div>
-    <Calculator />,
-    <Clock />,
-    {/* <TextCounter />, */}
-    {/* <Greet isLogged={false} /> */}
+    <Con />
   </div>,
   document.getElementById('root')
 )
