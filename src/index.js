@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DataList from './App'
+import Table from './App'
 
 
 
 ReactDOM.render(
-  <DataList />,
+  <Table />,
   document.getElementById('root')
 )
