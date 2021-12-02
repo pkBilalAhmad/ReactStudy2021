@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TodoApp from './TodoApp'
+// import TodoApp from './TodoApp'
 import TextCounter from './textCounter'
 
 
